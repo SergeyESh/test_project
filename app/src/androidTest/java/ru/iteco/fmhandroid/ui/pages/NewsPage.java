@@ -8,22 +8,17 @@ import static androidx.test.espresso.matcher.ViewMatchers.withContentDescription
 import static androidx.test.espresso.matcher.ViewMatchers.withId;
 import static org.hamcrest.Matchers.allOf;
 import static org.junit.Assert.assertEquals;
-import static ru.iteco.fmhandroid.ui.data.Data.categoryUnion;
-import static ru.iteco.fmhandroid.ui.data.Data.dateNews;
+import static ru.iteco.fmhandroid.ui.data.Data.*;
 import static ru.iteco.fmhandroid.ui.data.Data.descriptionNews;
-import static ru.iteco.fmhandroid.ui.data.Data.timeNews;
-import static ru.iteco.fmhandroid.ui.data.Data.tittleNews;
-import static ru.iteco.fmhandroid.ui.data.DataHelper.getRecyclerViewItemCount;
-import static ru.iteco.fmhandroid.ui.data.DataHelper.getTextFromNews;
-import static ru.iteco.fmhandroid.ui.steps.EditingNewsSteps.addNews;
-import static ru.iteco.fmhandroid.ui.steps.EditingNewsSteps.filterNewsByDate;
-import static ru.iteco.fmhandroid.ui.steps.EditingNewsSteps.scrollNews;
+import static ru.iteco.fmhandroid.ui.data.DataHelper.*;
+import static ru.iteco.fmhandroid.ui.pages.EditingNewsPage.*;
 
 import androidx.test.espresso.ViewInteraction;
 
 import org.junit.Assert;
 
 import ru.iteco.fmhandroid.R;
+import ru.iteco.fmhandroid.ui.data.Data;
 import ru.iteco.fmhandroid.ui.data.DataHelper;
 
 public class NewsPage {

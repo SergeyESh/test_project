@@ -12,6 +12,7 @@ import static org.hamcrest.Matchers.allOf;
 import static org.hamcrest.Matchers.is;
 
 import static ru.iteco.fmhandroid.ui.data.DataHelper.waitElement;
+import static ru.iteco.fmhandroid.ui.pages.NewsPage.editNewsButton;
 
 import androidx.test.espresso.ViewInteraction;
 
@@ -29,5 +30,33 @@ public class MainPage {
     public static int allNewsButtonId = R.id.all_news_text_view;
     public static int LogOutId = R.id.authorization_image_button;
     public static int quotesButtonID = R.id.our_mission_image_button;
+
+    public static void goToNewsPage() {
+        waitElement(mainMenuButtonId);
+        mainMenuButton.perform(click());
+        newsButton.check(matches(isDisplayed()));
+        newsButton.perform(click());
+    }
+
+    public static void goToNewsPageByAllNewsButton() {
+        waitElement(allNewsButtonId);
+        allNewsButton.perform(click());
+    }
+
+    public static void goToAboutPage() {
+        waitElement(mainMenuButtonId);
+        mainMenuButton.perform(click());
+        aboutButton.check(matches(isDisplayed()));
+        aboutButton.perform(click());
+    }
+
+    public static void goToQuotesPage() {
+        waitElement(quotesButtonID);
+        quotesButton.perform(click());
+    }
+
+    public static void goToNewsEditingPage() {
+        editNewsButton.perform(click());
+    }
 
 }

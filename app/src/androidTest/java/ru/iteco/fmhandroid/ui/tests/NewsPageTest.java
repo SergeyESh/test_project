@@ -1,22 +1,10 @@
 package ru.iteco.fmhandroid.ui.tests;
 
 
-import static ru.iteco.fmhandroid.ui.data.DataHelper.waitElement;
-import static ru.iteco.fmhandroid.ui.pages.NewsPage.addingNewsAndReturnPublishDate;
-import static ru.iteco.fmhandroid.ui.pages.NewsPage.checkHeightAfterClick;
-import static ru.iteco.fmhandroid.ui.pages.NewsPage.checkHeightAfterDoubleClick;
-import static ru.iteco.fmhandroid.ui.pages.NewsPage.checkPublishDateNews;
-import static ru.iteco.fmhandroid.ui.pages.NewsPage.clickFirstItem;
-import static ru.iteco.fmhandroid.ui.pages.NewsPage.doubleClickFirstItem;
-import static ru.iteco.fmhandroid.ui.pages.NewsPage.filterNewsByDateStep;
-import static ru.iteco.fmhandroid.ui.pages.NewsPage.getHeightAfterClick;
-import static ru.iteco.fmhandroid.ui.pages.NewsPage.getHeightBeforeClick;
-import static ru.iteco.fmhandroid.ui.pages.NewsPage.getItemCount;
-import static ru.iteco.fmhandroid.ui.pages.NewsPage.getRecyclerViewAndScrollToFirstPosition;
-import static ru.iteco.fmhandroid.ui.pages.NewsPage.newsListId;
-import static ru.iteco.fmhandroid.ui.steps.AuthorizationSteps.checkLogOutAndLogOutIfNot;
-import static ru.iteco.fmhandroid.ui.steps.NavigationSteps.goToNewsEditingPage;
-import static ru.iteco.fmhandroid.ui.steps.NavigationSteps.goToNewsPage;
+import static ru.iteco.fmhandroid.ui.data.DataHelper.*;
+import static ru.iteco.fmhandroid.ui.pages.AuthorizationPage.*;
+import static ru.iteco.fmhandroid.ui.pages.MainPage.*;
+import static ru.iteco.fmhandroid.ui.pages.NewsPage.*;
 
 import androidx.test.espresso.ViewInteraction;
 import androidx.test.ext.junit.rules.ActivityScenarioRule;

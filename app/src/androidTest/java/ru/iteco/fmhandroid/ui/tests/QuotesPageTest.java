@@ -1,7 +1,7 @@
 package ru.iteco.fmhandroid.ui.tests;
 
-import static ru.iteco.fmhandroid.ui.steps.AuthorizationSteps.checkLogInAndLogInIfNot;
-import static ru.iteco.fmhandroid.ui.steps.NavigationSteps.goToQuotesPage;
+import static ru.iteco.fmhandroid.ui.pages.AuthorizationPage.*;
+import static ru.iteco.fmhandroid.ui.pages.MainPage.*;
 
 import androidx.test.ext.junit.rules.ActivityScenarioRule;
 import androidx.test.ext.junit.runners.AndroidJUnit4;

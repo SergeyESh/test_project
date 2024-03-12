@@ -2,13 +2,11 @@ package ru.iteco.fmhandroid.ui.tests;
 
 import static androidx.test.espresso.assertion.ViewAssertions.matches;
 import static androidx.test.espresso.matcher.ViewMatchers.isDisplayed;
-import static ru.iteco.fmhandroid.ui.pages.AboutPage.versionText;
-import static ru.iteco.fmhandroid.ui.pages.NewsPage.filterNewsButton;
-import static ru.iteco.fmhandroid.ui.pages.QuotesPage.quoteText;
-import static ru.iteco.fmhandroid.ui.steps.AuthorizationSteps.checkLogOutAndLogOutIfNot;
-import static ru.iteco.fmhandroid.ui.steps.NavigationSteps.goToAboutPage;
-import static ru.iteco.fmhandroid.ui.steps.NavigationSteps.goToNewsPageByAllNewsButton;
-import static ru.iteco.fmhandroid.ui.steps.NavigationSteps.goToQuotesPage;
+import static ru.iteco.fmhandroid.ui.pages.AboutPage.*;
+import static ru.iteco.fmhandroid.ui.pages.AuthorizationPage.*;
+import static ru.iteco.fmhandroid.ui.pages.MainPage.*;
+import static ru.iteco.fmhandroid.ui.pages.NewsPage.*;
+import static ru.iteco.fmhandroid.ui.pages.QuotesPage.*;
 
 import androidx.test.ext.junit.rules.ActivityScenarioRule;
 import androidx.test.ext.junit.runners.AndroidJUnit4;

@@ -1,11 +1,9 @@
 package ru.iteco.fmhandroid.ui.tests;
 
-
-import static ru.iteco.fmhandroid.ui.data.Data.urlPrivacyPolicy;
-import static ru.iteco.fmhandroid.ui.data.Data.urlTermsOfUse;
-import static ru.iteco.fmhandroid.ui.pages.AboutPage.webPageExistence;
-import static ru.iteco.fmhandroid.ui.steps.AuthorizationSteps.checkLogInAndLogInIfNot;
-import static ru.iteco.fmhandroid.ui.steps.NavigationSteps.goToAboutPage;
+import static ru.iteco.fmhandroid.ui.data.Data.*;
+import static ru.iteco.fmhandroid.ui.pages.AboutPage.*;
+import static ru.iteco.fmhandroid.ui.pages.AuthorizationPage.*;
+import static ru.iteco.fmhandroid.ui.pages.MainPage.*;
 
 import androidx.test.ext.junit.rules.ActivityScenarioRule;
 import androidx.test.ext.junit.runners.AndroidJUnit4;
